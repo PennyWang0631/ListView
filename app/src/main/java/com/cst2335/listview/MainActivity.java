@@ -19,5 +19,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent (this, ArrayListActivity.class);
         startActivity(intent);
 
+
+    }
+
+    public void toSimpleListTest(View view){
+        Intent intent2 = new Intent(this,SimpleListActivity.class);
+        startActivity(intent2);
     }
 }
