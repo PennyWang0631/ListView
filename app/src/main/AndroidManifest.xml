@@ -14,9 +14,13 @@
         android:theme="@style/Theme.ListView"
         tools:targetApi="31">
         <activity
-            android:name=".SimpleListActivity"
-            android:label="SimpleList1"
+            android:name=".BaseListActivity"
+            android:label="BaseAdapterList"
             android:exported="false" />
+        <activity
+            android:name=".SimpleListActivity"
+            android:exported="false"
+            android:label="SimpleList1" />
         <activity
             android:name=".ArrayListActivity"
             android:exported="false"

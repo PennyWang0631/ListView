@@ -23,7 +23,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void toSimpleListTest(View view){
-        Intent intent2 = new Intent(this,SimpleListActivity.class);
-        startActivity(intent2);
+        Intent intent = new Intent(this,SimpleListActivity.class);
+        startActivity(intent);
+    }
+
+    public void toBaseListTest(View view){
+        Intent intent = new Intent(this, BaseListActivity.class );
+        startActivity(intent);
     }
 }
