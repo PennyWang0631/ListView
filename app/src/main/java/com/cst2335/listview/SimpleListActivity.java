@@ -3,8 +3,11 @@ package com.cst2335.listview;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -52,6 +55,13 @@ public class SimpleListActivity extends AppCompatActivity {
                 new int[]{R.id.iv_img,R.id.tv_title,R.id.tv_content});
 
         mListView.setAdapter(mSimpleAdapter);
+
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(SimpleListActivity.this,"click"+position,Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
     }
